@@ -1,8 +1,10 @@
 {
     "dt": "2022-01-20T12:57:59.823350+00:00",
-    "iurls": [],
-    "durls": ["http://127.0.0.1:7723/oobi/ENyOKtUHVtfV2MdrcJnSXpgi3x2mn8EB4U260SMLOrq8",
-        "http://127.0.0.1:7723/oobi/EIJsAGMPB4bigszYpVAngqyJ7HUBSy2zAbkVmO8SOSif",
-        "http://127.0.0.1:7723/oobi/EHbxC6vD0mU49geUxIfcQtTxP2tAqay7QCz3CVzfSdHz"
+    "iurls": [
+      "http://127.0.0.1:5642/oobi/BBilc4-L3tFUnfM_wJr4S4OJanAv_VmF_dJNN6vkf2Ha/controller",
+      "http://127.0.0.1:5643/oobi/BLskRTInXnMxWaGqcpSyMgo0nYbalW99cGZESrz3zapM/controller"
+    ],
+    "durls": [
+      "http://127.0.0.1:7723/oobi/EN6Oh5XSD5_q2Hgu-aqpdfbVepdpYpFlgz6zvJL5b_r5"
     ]
-}
+  }
