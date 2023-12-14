@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 # # updates the SAIDs of the schemas
 # ../update.sh
 
@@ -37,7 +37,7 @@ kli saidify --file ./desig-aliases-attr-public.json --label "d"
 echo "Resolving schema at $da_schema_oobi"
 kli oobi resolve --name "$alias" --oobi-alias myDesigAliases --oobi "$da_schema_oobi"
 echo "Issuing attestation to registry $reg_name with schema $d_alias_schema from credential file desig-aliases-public.json"
-kli vc create --name "$alias" --alias "$alias" --registry-name "$reg_name" --schema "${d_alias_schema}" --data @desig-aliases-attr-public.json --rules @desig-aliases-rules-public.json
+kli vc issue --name "$alias" --alias "$alias" --registry-name "$reg_name" --schema "${d_alias_schema}" --data @desig-aliases-attr-public.json --rules @desig-aliases-rules-public.json
 # kli vc create --name "$alias" --alias "$alias" --registry-name "$reg_name" --schema "${d_alias_schema}" --credential @desig-aliases-public.json
 echo "Getting SAID for attestation in registry $reg_name with schema $d_alias_schema"
 SAID=$(kli vc list --name "$alias" --alias "$alias" --issued --said --schema "${d_alias_schema}")
